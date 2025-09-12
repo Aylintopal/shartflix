@@ -1,0 +1,52 @@
+{
+    "auth_page": {
+        "login_txt": "Giriş Yap",
+        "login_desc_txt": "Kullanıcı bilgilerinle giriş yap",
+        "email_txt": "E-Posta",
+        "password_txt": "Şifre",
+        "password_again_txt": "Şifre Tekrar",
+        "forgot_password_txt": "Şifremi Unuttum",
+        "register_txt": "Kayıt Ol",
+        "signup_txt": "Hesap Oluştur",
+        "signup_desc_txt": "Kullanıcı bilgilerini girerek kaydol",
+        "name_surname_txt": "Ad Soyad",
+        "do_have_an_account_txt": "Hesabın var mı?",
+        "dont_have_account_txt": "Bir hesabın yok mu?",
+        "agreement_prefix_txt": "Kullanıcı sözleşmesini",
+        "agrement_accept_txt": "Okudum ve Kabul Ediyorum",
+        "agreement_suffix_txt": ".Lütfen bu sözleşmeyi okuyarak devam ediniz."
+    },
+    "home_page": {
+        "home_page_txt": "Anasayfa",
+        "profile_txt": "Profil",
+        "read_more_txt": "Devamı Oku"
+    },
+    "profile_page": {
+        "profile_detail_txt": "Profil Detayı",
+        "upload_photo_txt": "Fotoğraf Yükle",
+        "add_photo_txt": "Fotoğraf Ekle",
+        "favorites_txt": "Beğendiklerim",
+        "limited_offer_txt": "Sınırlı Teklif",
+        "description_txt": "Profil fotoğrafın için görsel yükleyebilirsin",
+        "continue_txt": "Devam Et",
+        "skip_txt": "Atla",
+        "offer_desc_txt": "Jeton Paketi'ni seçerek bonus kazanın ve yeni bölümlerin kilidini açın!",
+        "bonuses_txt": "Alacağınız Bonuslar",
+        "premium_account_txt": "Premium Hesap",
+        "matches_txt": "Daha Fazla Eşleşme",
+        "highlight_txt": "Öne Çıkarma",
+        "more_likes_txt": "Daha Fazla Beğeni",
+        "select_token_package_txt": "Kilidi açmak için jeton paketi seçin",
+        "token_txt": "Jeton",
+        "weekly_txt": "Başına haftalık",
+        "show_all_token_txt": "Tüm Jetonları Gör"
+    },
+    "error_texts": {
+        "email_isEmpty_text": "E-Posta boş bırakılamaz",
+        "email_isValid_text": "Geçerli bir e-posta giriniz",
+        "email_already_in_use": "Bu e-posta adresi zaten kullanımda.",
+        "user_not_found": "Kullanıcı bulunamadı.",
+        "password_isEmpty_text": "Şifre boş bırakılamaz",
+        "password_isValid_text": "Şifre 6 karakterden fazla olmalıdır"
+    }
+}

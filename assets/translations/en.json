@@ -1,0 +1,52 @@
+{
+    "auth_page": {
+        "login_txt": "Login",
+        "login_desc_txt": "Login with your user information",
+        "email_txt": "Email",
+        "password_txt": "Password",
+        "password_again_txt": "Repeat Password",
+        "forgot_password_txt": "Forgot Password",
+        "register_txt": "Register",
+        "signup_txt": "Create Account",
+        "signup_desc_txt": "Sign up by entering your user information",
+        "name_surname_txt": "Full Name",
+        "do_have_an_account_txt": "Already have an account?",
+        "dont_have_account_txt": "Don't have an account?",
+        "agreement_prefix_txt": "User agreement",
+        "agrement_accept_txt": "I have read and accept",
+        "agreement_suffix_txt": ". Please read this agreement before continuing."
+    },
+    "home_page": {
+        "home_page_txt": "Home",
+        "profile_txt": "Profile",
+        "read_more_txt": "Read More"
+    },
+    "profile_page": {
+        "profile_detail_txt": "Profile Details",
+        "upload_photo_txt": "Upload Photo",
+        "add_photo_txt": "Add Photo",
+        "favorites_txt": "My Favorites",
+        "limited_offer_txt": "Limited Offer",
+        "description_txt": "You can upload an image for your profile photo",
+        "continue_txt": "Continue",
+        "skip_txt": "Skip",
+        "offer_desc_txt": "Select a token package to earn bonuses and unlock new episodes!",
+        "bonuses_txt": "Bonuses You Will Receive",
+        "premium_account_txt": "Premium Account",
+        "matches_txt": "More Matches",
+        "highlight_txt": "Highlight",
+        "more_likes_txt": "More Likes",
+        "select_token_package_txt": "Select a token package to unlock",
+        "token_txt": "Token",
+        "weekly_txt": "Per week",
+        "show_all_token_txt": "View All Tokens"
+    },
+    "error_texts": {
+        "email_isEmpty_text": "Email cannot be empty",
+        "email_isValid_text": "Please enter a valid email",
+        "email_already_in_use": "This email address is already in use",
+        "user_not_found": "User not found",
+        "password_isEmpty_text": "Password cannot be empty",
+        "password_isValid_text": "Password must be at least 6 characters"
+    }
+}
