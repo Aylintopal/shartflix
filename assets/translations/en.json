@@ -12,9 +12,9 @@
         "name_surname_txt": "Full Name",
         "do_have_an_account_txt": "Already have an account?",
         "dont_have_account_txt": "Don't have an account?",
-        "agreement_prefix_txt": "User agreement",
-        "agrement_accept_txt": "I have read and accept",
-        "agreement_suffix_txt": ". Please read this agreement before continuing."
+        "agreement_prefix_txt": "User agreement ",
+        "agrement_accept_txt": "I have read and accept. ",
+        "agreement_suffix_txt": "Please read this agreement before continuing."
     },
     "home_page": {
         "home_page_txt": "Home",
@@ -42,11 +42,13 @@
         "show_all_token_txt": "View All Tokens"
     },
     "error_texts": {
-        "email_isEmpty_text": "Email cannot be empty",
-        "email_isValid_text": "Please enter a valid email",
-        "email_already_in_use": "This email address is already in use",
-        "user_not_found": "User not found",
-        "password_isEmpty_text": "Password cannot be empty",
-        "password_isValid_text": "Password must be at least 6 characters"
+        "email_isEmpty_txt": "Email cannot be empty",
+        "email_isValid_txt": "Please enter a valid email",
+        "invalid_credential_txt": "Incorrect email or password",
+        "password_isEmpty_txt": "Password cannot be empty",
+        "password_isValid_txt": "Password must be at least 6 characters",
+        "passwords_dont_match_txt": "Passwords don't match",
+        "name_isEmpty_txt": "Name cannot be empty",
+        "register_default_error_txt": "An error occurred"
     }
 }

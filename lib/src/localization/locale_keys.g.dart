@@ -42,12 +42,14 @@ abstract class  LocaleKeys {
   static const profile_page_weekly_txt = 'profile_page.weekly_txt';
   static const profile_page_show_all_token_txt = 'profile_page.show_all_token_txt';
   static const profile_page = 'profile_page';
-  static const error_texts_email_isEmpty_text = 'error_texts.email_isEmpty_text';
-  static const error_texts_email_isValid_text = 'error_texts.email_isValid_text';
-  static const error_texts_email_already_in_use = 'error_texts.email_already_in_use';
-  static const error_texts_user_not_found = 'error_texts.user_not_found';
-  static const error_texts_password_isEmpty_text = 'error_texts.password_isEmpty_text';
-  static const error_texts_password_isValid_text = 'error_texts.password_isValid_text';
+  static const error_texts_email_isEmpty_txt = 'error_texts.email_isEmpty_txt';
+  static const error_texts_email_isValid_txt = 'error_texts.email_isValid_txt';
+  static const error_texts_invalid_credential_txt = 'error_texts.invalid_credential_txt';
+  static const error_texts_password_isEmpty_txt = 'error_texts.password_isEmpty_txt';
+  static const error_texts_password_isValid_txt = 'error_texts.password_isValid_txt';
+  static const error_texts_passwords_dont_match_txt = 'error_texts.passwords_dont_match_txt';
+  static const error_texts_name_isEmpty_txt = 'error_texts.name_isEmpty_txt';
+  static const error_texts_register_default_error_txt = 'error_texts.register_default_error_txt';
   static const error_texts = 'error_texts';
 
 }

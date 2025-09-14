@@ -1,3 +1,0 @@
-class AppRadius {
-  AppRadius._();
-}

@@ -12,9 +12,9 @@
         "name_surname_txt": "Ad Soyad",
         "do_have_an_account_txt": "Hesabın var mı?",
         "dont_have_account_txt": "Bir hesabın yok mu?",
-        "agreement_prefix_txt": "Kullanıcı sözleşmesini",
-        "agrement_accept_txt": "Okudum ve Kabul Ediyorum",
-        "agreement_suffix_txt": ".Lütfen bu sözleşmeyi okuyarak devam ediniz."
+        "agreement_prefix_txt": "Kullanıcı sözleşmesini ",
+        "agrement_accept_txt": "Okudum ve Kabul Ediyorum. ",
+        "agreement_suffix_txt": "Lütfen bu sözleşmeyi okuyarak devam ediniz."
     },
     "home_page": {
         "home_page_txt": "Anasayfa",
@@ -42,11 +42,13 @@
         "show_all_token_txt": "Tüm Jetonları Gör"
     },
     "error_texts": {
-        "email_isEmpty_text": "E-Posta boş bırakılamaz",
-        "email_isValid_text": "Geçerli bir e-posta giriniz",
-        "email_already_in_use": "Bu e-posta adresi zaten kullanımda.",
-        "user_not_found": "Kullanıcı bulunamadı.",
-        "password_isEmpty_text": "Şifre boş bırakılamaz",
-        "password_isValid_text": "Şifre 6 karakterden fazla olmalıdır"
+        "email_isEmpty_txt": "E-Posta boş bırakılamaz",
+        "email_isValid_txt": "Geçerli bir e-posta giriniz",
+        "invalid_credential_txt": "Bilgiler hatalı veya eksik",
+        "password_isEmpty_txt": "Şifre boş bırakılamaz",
+        "password_isValid_txt": "Şifre 6 karakterden fazla olmalıdır",
+        "passwords_dont_match_txt": "Şifreler eşleşmiyor",
+        "name_isEmpty_txt": "İsim boş bırakılamaz",
+        "register_default_error_txt": "Beklenmeyen bir hata oluştu"
     }
 }
