@@ -25,6 +25,11 @@ class AuthFailure extends AppFailure {
     }
   }
 }
+
+class MovieFailure extends AppFailure {
+  const MovieFailure({required super.message, required super.code});
+}
+
 class PhotoUploadFailure extends AppFailure {
   const PhotoUploadFailure({required super.message, required super.code});
 }
