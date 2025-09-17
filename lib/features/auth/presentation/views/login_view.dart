@@ -72,14 +72,15 @@ class _LoginViewState extends State<LoginView> {
         },
       ),
     ];
+
     return Scaffold(
       body: GradientWidget(
         content: Padding(
-          padding: AppPaddings.horizontalPadding24,
+          padding: AppPaddings.horizontalP24,
           child: BlocConsumer<AuthCubit, AuthState>(
             listener: (context, state) {
               if (state is AuthSuccess) {
-                Navigator.pushReplacementNamed(context, AppRoutes.home);
+                Navigator.pushReplacementNamed(context, AppRoutes.navBar);
               } else if (state is AuthError) {
                 ScaffoldMessenger.of(
                   context,

@@ -82,6 +82,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/logo.svg
   String get logo => 'assets/svg/logo.svg';
 
+  /// File path: assets/svg/vector.svg
+  String get vector => 'assets/svg/vector.svg';
+
   /// File path: assets/svg/white_logo.svg
   String get whiteLogo => 'assets/svg/white_logo.svg';
 
@@ -107,6 +110,7 @@ class $AssetsSvgGen {
     x,
     gradientLogo,
     logo,
+    vector,
     whiteLogo,
   ];
 }

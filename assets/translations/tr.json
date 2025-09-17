@@ -19,7 +19,8 @@
     "home_page": {
         "home_page_txt": "Anasayfa",
         "profile_txt": "Profil",
-        "read_more_txt": "Devamı Oku"
+        "read_more_txt": "Devamı Oku",
+        "hide_txt": "Daha az oku"
     },
     "profile_page": {
         "profile_detail_txt": "Profil Detayı",
@@ -49,6 +50,7 @@
         "password_isValid_txt": "Şifre 6 karakterden fazla olmalıdır",
         "passwords_dont_match_txt": "Şifreler eşleşmiyor",
         "name_isEmpty_txt": "İsim boş bırakılamaz",
-        "register_default_error_txt": "Beklenmeyen bir hata oluştu"
+        "register_default_error_txt": "Beklenmeyen bir hata oluştu",
+        "no_movies_found": "Film bulunamadı"
     }
 }

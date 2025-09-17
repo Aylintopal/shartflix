@@ -19,7 +19,8 @@
     "home_page": {
         "home_page_txt": "Home",
         "profile_txt": "Profile",
-        "read_more_txt": "Read More"
+        "read_more_txt": "Read more",
+        "hide_txt": "Read less"
     },
     "profile_page": {
         "profile_detail_txt": "Profile Details",
@@ -49,6 +50,7 @@
         "password_isValid_txt": "Password must be at least 6 characters",
         "passwords_dont_match_txt": "Passwords don't match",
         "name_isEmpty_txt": "Name cannot be empty",
-        "register_default_error_txt": "An error occurred"
+        "register_default_error_txt": "An error occurred",
+        "no_movies_found": "No movies found"
     }
 }

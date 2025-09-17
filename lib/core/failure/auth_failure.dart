@@ -25,3 +25,6 @@ class AuthFailure extends AppFailure {
     }
   }
 }
+class PhotoUploadFailure extends AppFailure {
+  const PhotoUploadFailure({required super.message, required super.code});
+}

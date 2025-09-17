@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shartflix/core/constants/app_colors.dart';
-import 'package:shartflix/core/constants/app_paddings.dart';
 import 'package:shartflix/core/constants/app_border_styles.dart';
 import 'package:shartflix/core/constants/app_text_styles.dart';
 import 'package:shartflix/gen/assets.gen.dart';
@@ -95,7 +94,10 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           labelStyle: AppTextStyles.bodyNormalRegular.copyWith(
             color: AppColors.white50,
           ),
-          contentPadding: AppPaddings.formFieldPadding,
+          contentPadding: EdgeInsets.symmetric(
+            vertical: 16.h,
+            horizontal: 20.w,
+          ),
           floatingLabelBehavior: FloatingLabelBehavior.never,
           border: AppBorderStyles.inputBorderStyle(),
           focusedBorder: AppBorderStyles.inputBorderStyle(

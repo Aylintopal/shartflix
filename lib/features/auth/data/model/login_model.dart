@@ -8,7 +8,5 @@ class LoginModel {
     return LoginModel(email: json['email'], password: json['password']);
   }
 
-  Map<String, dynamic> toJson() {
-    return {'email': email, 'password': password};
-  }
+  Map<String, dynamic> toJson() => {'email': email, 'password': password};
 }

@@ -7,7 +7,6 @@ class AppBorderStyles {
 
   static BorderRadius radius18 = BorderRadius.circular(18.r);
   static BorderRadius radius16 = BorderRadius.circular(16.r);
-  static BorderRadius radius6 = BorderRadius.circular(6.r);
   static double borderWidth = 1;
   static Color borderColor = AppColors.white20;
 

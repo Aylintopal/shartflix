@@ -9,7 +9,7 @@ import 'package:shartflix/features/auth/domain/repositories/auth_repository.dart
 
 @LazySingleton(as: AuthRepository)
 class AuthRepositoryImpl implements AuthRepository {
-  AuthRepositoryImpl(this.preferences, {required this.authDataSource});
+  AuthRepositoryImpl({required this.authDataSource, required this.preferences});
 
   final AuthRemoteDatasource authDataSource;
   final SharedPreferences preferences;

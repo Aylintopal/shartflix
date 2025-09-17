@@ -3,7 +3,8 @@ import 'package:shartflix/core/constants/app_colors.dart';
 
 class GradientWidget extends StatelessWidget {
   final Widget content;
-  const GradientWidget({super.key, required this.content});
+  final bool? topGradient;
+  const GradientWidget({super.key, required this.content, this.topGradient});
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +19,22 @@ class GradientWidget extends StatelessWidget {
               end: Alignment.bottomCenter,
               begin: Alignment.topCenter,
               colors: [AppColors.maroon, AppColors.dark],
-              stops: const [0.3, 0.5],
+              stops: const [0.3, 0.6],
             ),
           ),
         ),
         Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: RadialGradient(
               center: Alignment.topCenter,
               radius: 0.4,
-              colors: [AppColors.primary, AppColors.myColor],
-              stops: [0.0, 1],
+              colors: [
+                topGradient == false ? AppColors.opacityBlack : AppColors.primary,
+                AppColors.opacityBlack,
+              ],
+              stops: [0, 1],
             ),
           ),
         ),

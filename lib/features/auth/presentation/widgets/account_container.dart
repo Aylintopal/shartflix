@@ -3,8 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shartflix/core/constants/app_border_styles.dart';
 import 'package:shartflix/core/constants/app_colors.dart';
-import 'package:shartflix/core/constants/app_paddings.dart';
-
 class AccountContainer extends StatelessWidget {
   final String icon;
   final VoidCallback? onTap;
@@ -15,7 +13,7 @@ class AccountContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: AppPaddings.allPadding18,
+        padding: EdgeInsets.all(18.r),
         height: 60.h,
         width: 60.w,
         decoration: BoxDecoration(

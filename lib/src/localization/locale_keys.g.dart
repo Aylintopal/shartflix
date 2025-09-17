@@ -22,6 +22,7 @@ abstract class  LocaleKeys {
   static const home_page_home_page_txt = 'home_page.home_page_txt';
   static const home_page_profile_txt = 'home_page.profile_txt';
   static const home_page_read_more_txt = 'home_page.read_more_txt';
+  static const home_page_hide_txt = 'home_page.hide_txt';
   static const home_page = 'home_page';
   static const profile_page_profile_detail_txt = 'profile_page.profile_detail_txt';
   static const profile_page_upload_photo_txt = 'profile_page.upload_photo_txt';
@@ -50,6 +51,7 @@ abstract class  LocaleKeys {
   static const error_texts_passwords_dont_match_txt = 'error_texts.passwords_dont_match_txt';
   static const error_texts_name_isEmpty_txt = 'error_texts.name_isEmpty_txt';
   static const error_texts_register_default_error_txt = 'error_texts.register_default_error_txt';
+  static const error_texts_no_movies_found = 'error_texts.no_movies_found';
   static const error_texts = 'error_texts';
 
 }

@@ -22,7 +22,10 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-    _showLetters = List.generate(AppStrings.appNameTxt.length, (index) => false);
+    _showLetters = List.generate(
+      AppStrings.appNameTxt.length,
+      (index) => false,
+    );
 
     Future.delayed(const Duration(milliseconds: 100), () {
       setState(() => _showLogo = true);
@@ -42,7 +45,7 @@ class _SplashViewState extends State<SplashView> {
         listener: (context, state) {
           Future.delayed(const Duration(seconds: 3), () {
             if (state is SplashSuccess) {
-              Navigator.pushReplacementNamed(context, AppRoutes.home);
+              Navigator.pushReplacementNamed(context, AppRoutes.uploadPhoto);
             } else if (state is SplashError) {
               Navigator.pushReplacementNamed(context, AppRoutes.login);
             }
@@ -67,7 +70,9 @@ class _SplashViewState extends State<SplashView> {
                 mainAxisSize: MainAxisSize.min,
                 children: List.generate(AppStrings.appNameTxt.length, (index) {
                   return AnimatedSlide(
-                    offset: _showLetters[index] ? Offset.zero : const Offset(0, 0.5),
+                    offset: _showLetters[index]
+                        ? Offset.zero
+                        : const Offset(0, 0.5),
                     duration: const Duration(milliseconds: 300),
                     curve: Curves.easeOut,
                     child: AnimatedOpacity(
