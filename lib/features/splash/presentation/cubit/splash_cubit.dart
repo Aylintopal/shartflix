@@ -13,9 +13,12 @@ class SplashCubit extends Cubit<SplashState> {
   Future<void> _checkAuth() async {
     await Future.delayed(Duration(milliseconds: 400));
     final user = preferences.getString('token');
-
+    final isRegistered = preferences.getBool('isRegistered');
+    print(isRegistered);
     if (user != null) {
-      emit(SplashSuccess(isAuthenticated: true));
+      emit(SplashLoggedIn(isAuthenticated: true));
+    } else if (isRegistered == true) {
+      emit(SplashRegistered());
     } else {
       emit(SplashError(message: "Kullanıcı bulunamadı"));
     }

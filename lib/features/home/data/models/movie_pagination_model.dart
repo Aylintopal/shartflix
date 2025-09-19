@@ -1,4 +1,4 @@
-import 'package:shartflix/features/home/data/models/movie_model.dart';
+import 'package:shartflix/core/models/movie_model.dart';
 
 class MoviePaginationModel {
   final List<MovieModel> movies;

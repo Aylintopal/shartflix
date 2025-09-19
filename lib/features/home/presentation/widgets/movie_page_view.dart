@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shartflix/core/constants/app_colors.dart';
 import 'package:shartflix/core/constants/app_paddings.dart';
 import 'package:shartflix/core/constants/app_text_styles.dart';
-import 'package:shartflix/features/home/data/models/movie_model.dart';
+import 'package:shartflix/core/models/movie_model.dart';
+import 'package:shartflix/features/profile/presentation/cubit/favorite_cubit.dart';
 import 'package:shartflix/features/home/presentation/widgets/expandable_text.dart';
 import 'package:shartflix/features/home/presentation/widgets/favorite_button.dart';
 import 'package:shartflix/gen/assets.gen.dart';
@@ -60,7 +62,14 @@ class MoviePageView extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    FavoriteButton(),
+                    FavoriteButton(
+                      isLiked: movie.isFavorite ?? false,
+                      onTap: () {
+                        context.read<FavoriteCubit>().setFavorites(
+                          favoriteId: movie.id ?? '',
+                        );
+                      },
+                    ),
                     20.verticalSpace,
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,

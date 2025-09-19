@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import 'package:shartflix/core/failure/auth_failure.dart';
+import 'package:shartflix/core/failure/app_failure.dart';
 import 'package:shartflix/features/home/data/models/movie_pagination_model.dart';
-import 'package:shartflix/features/home/data/models/movie_model.dart';
+import 'package:shartflix/core/models/movie_model.dart';
 import 'package:shartflix/features/home/domain/usecases/movie_usecase.dart';
 import 'package:shartflix/features/home/presentation/cubit/movie_state.dart';
 
@@ -17,8 +17,8 @@ class MovieCubit extends Cubit<MovieState> {
       emit(MovieLoading());
     }
 
-    final Either<MovieFailure, MoviePaginationModel> response = await movieUsecase
-        .getMovieList(page: page);
+    final Either<AppFailure, MoviePaginationModel> response =
+        await movieUsecase.getMovieList(page: page);
 
     response.fold((failure) => emit(MovieError(message: failure.message)), (
       movieListModel,

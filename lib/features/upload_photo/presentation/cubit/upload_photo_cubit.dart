@@ -25,6 +25,8 @@ class UploadPhotoCubit extends Cubit<UploadPhotoState> {
           emit(UploadPhotoSuccess(imageUrl: response));
         },
       );
+    } else {
+      emit(UploadPhotoInitial());
     }
   }
 

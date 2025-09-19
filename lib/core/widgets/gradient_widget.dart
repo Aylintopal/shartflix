@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:shartflix/core/constants/app_colors.dart';
 
 class GradientWidget extends StatelessWidget {
@@ -18,26 +18,28 @@ class GradientWidget extends StatelessWidget {
             gradient: LinearGradient(
               end: Alignment.bottomCenter,
               begin: Alignment.topCenter,
-              colors: [AppColors.maroon, AppColors.dark],
-              stops: const [0.3, 0.6],
-            ),
-          ),
-        ),
-        Container(
-          width: double.infinity,
-          height: double.infinity,
-          decoration: BoxDecoration(
-            gradient: RadialGradient(
-              center: Alignment.topCenter,
-              radius: 0.4,
               colors: [
-                topGradient == false ? AppColors.opacityBlack : AppColors.primary,
-                AppColors.opacityBlack,
+                topGradient == false ? AppColors.maroon : AppColors.maroon,
+                AppColors.dark,
               ],
-              stops: [0, 1],
+              stops:  [0.3,   0.6],
             ),
           ),
         ),
+        topGradient == false
+            ? SizedBox.shrink()
+            : Container(
+                width: double.infinity,
+                height: double.infinity,
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    center: Alignment.topCenter,
+                    radius: 0.4,
+                    colors: [AppColors.primary, AppColors.opacityBlack],
+                    stops: [0, 1],
+                  ),
+                ),
+              ),
         content,
       ],
     );

@@ -44,7 +44,9 @@ class _SplashViewState extends State<SplashView> {
       body: BlocListener<SplashCubit, SplashState>(
         listener: (context, state) {
           Future.delayed(const Duration(seconds: 3), () {
-            if (state is SplashSuccess) {
+            if (state is SplashLoggedIn) {
+              Navigator.pushReplacementNamed(context, AppRoutes.navBar);
+            } else if (state is SplashRegistered) {
               Navigator.pushReplacementNamed(context, AppRoutes.uploadPhoto);
             } else if (state is SplashError) {
               Navigator.pushReplacementNamed(context, AppRoutes.login);

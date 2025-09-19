@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:shartflix/core/failure/auth_failure.dart';
+import 'package:shartflix/core/failure/app_failure.dart';
 import 'package:shartflix/features/home/data/datasource/movie_remote_datasource.dart';
 import 'package:shartflix/features/home/data/models/movie_pagination_model.dart';
 

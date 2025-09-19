@@ -14,6 +14,8 @@ dependencies:
   # Ui & Device
   cupertino_icons: ^1.0.8
   flutter_screenutil: ^5.9.3
+  dotted_border: ^3.1.0
+  flutter_inner_shadow: ^0.0.1
  
   # Assets
   google_fonts: ^6.3.1
@@ -38,12 +40,13 @@ dependencies:
   
   # Localization
   easy_localization: ^3.0.8
+
+  # Storage
   shared_preferences: ^2.5.3
 
+  # Other
   flutter_dotenv: ^6.0.0 
-  dotted_border: ^3.1.0
- 
- 
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -72,6 +75,7 @@ flutter:
        - assets/translations/
        - assets/animations/
        - assets/svg/
+       - assets/png/
        - .env
 
   # An image asset can refer to one or more resolution-specific "variants", see

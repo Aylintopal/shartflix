@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shartflix/core/constants/app_border_styles.dart';
-import 'package:shartflix/core/constants/app_colors.dart';
+import 'package:shartflix/core/widgets/custom_close_button.dart';
 import 'package:shartflix/core/widgets/custom_progress_indicator.dart';
 import 'package:shartflix/features/upload_photo/presentation/cubit/upload_photo_cubit.dart';
 import 'package:shartflix/features/upload_photo/presentation/cubit/upload_photo_state.dart';
@@ -52,22 +51,10 @@ class _ImagePickerWidgetState extends State<ImagePickerWidget> {
             child: Image.network(state.imageUrl, fit: BoxFit.cover),
           ),
         ),
-        InkWell(
-          onTap: () {
+        CustomCloseButton(
+          onPressed: () {
             context.read<UploadPhotoCubit>().reset();
           },
-          child: Container(
-            padding: EdgeInsets.all(6.r),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.transparent,
-              border: Border.all(
-                width: AppBorderStyles.borderWidth,
-                color: AppColors.white50,
-              ),
-            ),
-            child: SvgPicture.asset(Assets.svg.x),
-          ),
         ),
       ],
     );

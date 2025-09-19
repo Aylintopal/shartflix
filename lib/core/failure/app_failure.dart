@@ -33,3 +33,11 @@ class MovieFailure extends AppFailure {
 class PhotoUploadFailure extends AppFailure {
   const PhotoUploadFailure({required super.message, required super.code});
 }
+
+class UserFailure extends AppFailure {
+  const UserFailure({required super.message, required super.code});
+}
+
+class FavoriteFailure extends AppFailure {
+  const FavoriteFailure({required super.message, required super.code});
+}

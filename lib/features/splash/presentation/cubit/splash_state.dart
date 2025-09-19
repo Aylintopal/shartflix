@@ -12,13 +12,18 @@ class SplashLoading extends SplashState {
   List<Object?> get props => [];
 }
 
-class SplashSuccess extends SplashState {
+class SplashLoggedIn extends SplashState {
   final bool isAuthenticated;
 
-  SplashSuccess({required this.isAuthenticated});
+  SplashLoggedIn({required this.isAuthenticated});
 
   @override
   List<Object?> get props => [isAuthenticated];
+}
+
+class SplashRegistered extends SplashState {
+  @override
+  List<Object?> get props => [];
 }
 
 class SplashError extends SplashState {

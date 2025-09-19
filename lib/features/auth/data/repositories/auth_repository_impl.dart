@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:shartflix/core/failure/auth_failure.dart';
+import 'package:shartflix/core/failure/app_failure.dart';
 import 'package:shartflix/features/auth/data/datasource/auth_remote_datasource.dart';
 import 'package:shartflix/features/auth/data/model/auth_response_model.dart';
 import 'package:shartflix/features/auth/domain/repositories/auth_repository.dart';
@@ -49,6 +49,8 @@ class AuthRepositoryImpl implements AuthRepository {
       );
 
       await preferences.setString('token', data.token!);
+      await preferences.setBool('isRegistered', true);
+      
       return Right(data);
     } on AuthFailure catch (e) {
       return Left(e);

@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
-import 'package:shartflix/core/failure/auth_failure.dart';
+import 'package:shartflix/core/failure/app_failure.dart';
 import 'package:shartflix/features/upload_photo/data/datasource/upload_photo_remotedatasource.dart';
 import 'package:shartflix/features/upload_photo/domain/repositories/upload_photo_repository.dart';
 

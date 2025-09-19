@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:shartflix/core/failure/auth_failure.dart';
+import 'package:shartflix/core/failure/app_failure.dart';
 import 'package:shartflix/features/auth/data/model/auth_response_model.dart';
 
 abstract class AuthRepository {

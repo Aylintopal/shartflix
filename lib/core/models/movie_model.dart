@@ -3,8 +3,17 @@ class MovieModel {
   final String? title;
   final String? description;
   final String? posterUrl;
+  final String? director;
+  bool? isFavorite;
 
-  const MovieModel({this.id, this.title, this.description, this.posterUrl});
+  MovieModel({
+    this.id,
+    this.title,
+    this.description,
+    this.posterUrl,
+    this.director,
+    this.isFavorite,
+  });
 
   factory MovieModel.fromJson(Map<String, dynamic> json) {
     return MovieModel(
@@ -12,6 +21,8 @@ class MovieModel {
       title: json['Title'],
       description: json['Plot'],
       posterUrl: json['Poster'],
+      director: json['Director'],
+      isFavorite: json['isFavorite'],
     );
   }
 }

@@ -39,6 +39,20 @@ import 'package:shartflix/features/home/domain/usecases/movie_usecase.dart'
     as _i404;
 import 'package:shartflix/features/home/presentation/cubit/movie_cubit.dart'
     as _i571;
+import 'package:shartflix/features/profile/data/datasource/profile_remote_datasource.dart'
+    as _i943;
+import 'package:shartflix/features/profile/data/datasource/profile_remote_datasource_impl.dart'
+    as _i742;
+import 'package:shartflix/features/profile/data/repositories/profile_repository_impl.dart'
+    as _i53;
+import 'package:shartflix/features/profile/domain/repositories/profile_repository.dart'
+    as _i454;
+import 'package:shartflix/features/profile/domain/usecase/profile_usecase.dart'
+    as _i62;
+import 'package:shartflix/features/profile/presentation/cubit/favorite_cubit.dart'
+    as _i354;
+import 'package:shartflix/features/profile/presentation/cubit/profile_cubit.dart'
+    as _i992;
 import 'package:shartflix/features/splash/presentation/cubit/splash_cubit.dart'
     as _i303;
 import 'package:shartflix/features/upload_photo/data/datasource/upload_photo_remotedatasource.dart'
@@ -74,6 +88,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i105.AuthRemoteDatasource>(
       () => _i887.AuthRemoteDatasourceImpl(gh<_i361.Dio>()),
     );
+    gh.lazySingleton<_i943.ProfileRemoteDatasource>(
+      () => _i742.ProfileRemoteDatasourceImpl(dio: gh<_i361.Dio>()),
+    );
     gh.lazySingleton<_i828.UploadPhotoRemotedatasource>(
       () => _i643.UploadPhotoRemotedatasourceImpl(dio: gh<_i361.Dio>()),
     );
@@ -84,6 +101,14 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i953.UploadPhotoRepositoryImpl(
         dataSource: gh<_i828.UploadPhotoRemotedatasource>(),
       ),
+    );
+    gh.lazySingleton<_i454.ProfileRepository>(
+      () => _i53.ProfileRepositoryImpl(
+        datasource: gh<_i943.ProfileRemoteDatasource>(),
+      ),
+    );
+    gh.factory<_i62.ProfileUsecase>(
+      () => _i62.ProfileUsecase(repository: gh<_i454.ProfileRepository>()),
     );
     gh.lazySingleton<_i291.AuthRepository>(
       () => _i689.AuthRepositoryImpl(
@@ -101,6 +126,12 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i57.AuthCubit>(
       () => _i57.AuthCubit(authUsecase: gh<_i1060.AuthUsecase>()),
+    );
+    gh.factory<_i992.ProfileCubit>(
+      () => _i992.ProfileCubit(usecase: gh<_i62.ProfileUsecase>()),
+    );
+    gh.factory<_i354.FavoriteCubit>(
+      () => _i354.FavoriteCubit(profileUsecase: gh<_i62.ProfileUsecase>()),
     );
     gh.factory<_i1044.UploadPhotoUsecase>(
       () => _i1044.UploadPhotoUsecase(
